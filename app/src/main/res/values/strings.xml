@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">StaticShortcutsDemo</string>
+    <string name="first_short_label">运动1</string>
+    <string name="first_long_label">我的运动1</string>
+    <string name="first_disable_message">当前运动1未被激活</string>
+
+    <string name="second_short_label">飞机2</string>
+    <string name="second_long_label">我的飞机2</string>
+    <string name="second_disable_message">当前飞机2未被激活</string>
+
+    <string name="third_short_label">汽车3</string>
+    <string name="third_long_label">我的汽车3</string>
+    <string name="third_disable_message">当前汽车3未被激活</string>
+
+    <string name="forth_short_label">铃铛4</string>
+    <string name="forth_long_label">我的铃铛4</string>
+    <string name="forth_disable_message">当前铃铛4未被激活</string>
+
+    <string name="fifth_short_label">电脑5</string>
+    <string name="fifth_long_label">我的电脑5</string>
+    <string name="fifth_disable_message">当前电脑5未被激活</string>
+
+    <string name="sixth_short_label">蛋糕6</string>
+    <string name="sixth_long_label">我的蛋糕6</string>
+    <string name="sixth_disable_message">当前蛋糕6未被激活</string>
+
+    <string name="settings_short_name">设置</string>
+    <string name="settings_long_name">我的设置</string>
+    <string name="settings_disable_msg">我的设置描述消息</string>
+</resources>

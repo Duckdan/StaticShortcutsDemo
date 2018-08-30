@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--静态方式的使用，产生的标签最多也只有4个-->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+      <!--
+        android:enabled
+        用来区分当前快捷方式是否激活，值为false表示当前条目失效，
+        值为true表示当前条目激活；失效的时候依次类推
+        android:icon用来指定条目的图标
+        android:shortcutId用来指定条目的唯一识别名
+        android:shortcutLongLabel用来指定条目的长标签
+        android:shortcutShortLabel用来指定条目短标签
+        android:shortcutDisabledMessage用来指定条目未被激活时条目被点击时候的弹出信息
+      -->
+
+    <shortcut
+         android:enabled="true"
+         android:icon="@drawable/ic_first"
+         android:shortcutDisabledMessage="@string/first_disable_message"
+         android:shortcutId="first"
+         android:shortcutLongLabel="@string/first_long_label"
+         android:shortcutShortLabel="@string/first_short_label">
+
+        <!--
+            android:action指定开启Activity的意图
+            android:targetClass指定条目的目标类名
+            android:targetPackage必须是当前应用的包名，否则会提示“未安装该应用”
+        -->
+         <intent
+             android:action="android.intent.action.VIEW"
+             android:targetClass="com.study.yang.staticshortcutsdemo.static_short.FirstStaticActivity"
+             android:targetPackage="com.study.yang.staticshortcutsdemo" />
+
+        <!--此处可填可不填，默认即可-->
+          <categories android:name="android.shortcut.conversation"/>
+
+     </shortcut>
+
+   <shortcut
+         android:enabled="true"
+         android:icon="@drawable/ic_second"
+         android:shortcutDisabledMessage="@string/second_disable_message"
+         android:shortcutId="second"
+         android:shortcutLongLabel="@string/second_long_label"
+         android:shortcutShortLabel="@string/second_short_label">
+
+        <!--类似栈算法由上到下-->
+         <intent
+             android:action="android.intent.action.VIEW"
+             android:targetClass="com.study.yang.staticshortcutsdemo.static_short.SecondStaticActivity"
+             android:targetPackage="com.study.yang.staticshortcutsdemo" />
+
+
+         <intent
+             android:action="android.intent.action.VIEW"
+             android:targetClass="com.study.yang.staticshortcutsdemo.MainActivity"
+             android:targetPackage="com.study.yang.staticshortcutsdemo" />
+     </shortcut>
+
+     <shortcut
+         android:enabled="true"
+         android:icon="@drawable/ic_third"
+         android:shortcutDisabledMessage="@string/third_disable_message"
+         android:shortcutId="third"
+         android:shortcutLongLabel="@string/third_long_label"
+         android:shortcutShortLabel="@string/third_short_label">
+
+         <intent
+             android:action="android.intent.action.VIEW"
+             android:targetClass="com.study.yang.staticshortcutsdemo.static_short.ThirdStaticActivity"
+             android:targetPackage="com.study.yang.staticshortcutsdemo" />
+
+
+     </shortcut>
+
+     <shortcut
+         android:enabled="true"
+         android:icon="@drawable/ic_forth"
+         android:shortcutDisabledMessage="@string/forth_disable_message"
+         android:shortcutId="forth"
+         android:shortcutLongLabel="@string/forth_long_label"
+         android:shortcutShortLabel="@string/forth_short_label">
+
+         <intent
+             android:action="android.intent.action.VIEW"
+             android:targetClass="com.study.yang.staticshortcutsdemo.static_short.ForthStaticActivity"
+             android:targetPackage="com.study.yang.staticshortcutsdemo" />
+
+
+     </shortcut>
+
+    <!--从此处开始以下的shortcut都不会显示-->
+     <shortcut
+         android:enabled="true"
+         android:icon="@drawable/ic_fifth"
+         android:shortcutDisabledMessage="@string/fifth_disable_message"
+         android:shortcutId="fifth"
+         android:shortcutLongLabel="@string/fifth_long_label"
+         android:shortcutShortLabel="@string/fifth_short_label">
+
+         <intent
+             android:action="android.intent.action.VIEW"
+             android:targetClass="com.study.yang.staticshortcutsdemo.static_short.FifthStaticActivity"
+             android:targetPackage="com.study.yang.staticshortcutsdemo" />
+
+
+     </shortcut>
+
+     <shortcut
+         android:enabled="true"
+         android:icon="@drawable/ic_sixth"
+         android:shortcutDisabledMessage="@string/sixth_disable_message"
+         android:shortcutId="sixth"
+         android:shortcutLongLabel="@string/sixth_long_label"
+         android:shortcutShortLabel="@string/sixth_short_label">
+
+         <intent
+             android:action="android.intent.action.VIEW"
+             android:targetClass="com.study.yang.staticshortcutsdemo.static_short.SixthStaticActivity"
+             android:targetPackage="com.study.yang.staticshortcutsdemo" />
+
+     </shortcut>
+
+</shortcuts>
